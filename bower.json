@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "authors": [
+    "Belushev Vlad <kmlider001@gmail.com>"
+  ],
+  "description": "test",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "bootstrap": "^4.3.1"
+  }
+}

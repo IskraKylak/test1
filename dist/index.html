@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.PNG" type="image/x-icon">
+
+	<!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+	<!-- Bootstrap Reboot CSS -->
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+	<!-- Main arcticmodal -->
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Media Queries CSS -->
+	<link rel="stylesheet" href="css/media.css">
+
+	<!-- Main arcticmodal -->
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+</head>
+<body>
+	<div id="page-preloader" class="cssload-wrap">
+		<div class="loader">
+		  <div class="circle"></div>
+		  <div class="circle"></div>
+		  <div class="circle"></div>
+		</div>
+	</div>
+	<header class="header" id="header">
+		<div class="stripHead">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="stripHead-content">
+							<div class="stripHead-region">
+								<p class="stripHead-region__text">
+									Ваш регион:
+								</p>
+								<div class="stripHead-region__selectWrap">
+									<select name="town" class="stripHead-region__select">
+										 <option value="s1">Киев</option>
+										 <option value="s2" selected>Днепр</option>
+										 <option value="s3">Харьков</option>
+										 <option value="s3">Одесса</option>
+									</select >
+								</div>
+								
+							</div>
+							<div class="stripHead-link">
+								<a href="#" class="stripHead-link__shroom">Шоурум</a>
+								<a href="#" class="stripHead-link__contact">Контакты</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="headBorder">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header-nav">
+							<div class="contentHead">
+								<div class="menu-burger">
+									<img src="img/menu.png" class="img-fluid menu-burger__img" alt="img">
+								</div>
+								<div class="wrap-flexReverse">
+									<div class="leftHead">
+										<div class="leftHead__contact">
+											<a href="#" class="leftHead__tel">
+												0-800-56-87-96
+											</a>
+											<p class="leftHead__time">
+												(пн-пт - 10:00-19:00 сб-вс - 11:00 - 17:00)
+											</p>
+										</div>
+										<button class="leftHead__backCall" >
+											Заказать звонок
+										</button>
+									</div>
+									<a href="#" class="logoHead">
+										<img src="img/logo.png" alt="img" class="logoHead__img img-fluid">
+									</a>
+								</div>
+								<div class="rightHead">
+									<a class="rightHead__search">
+										<input type="text" class="rightHead__inpSearch d-none" placeholder="поиск">
+										<div class="rightHead__circle rightHead__circle_search">
+											<img src="img/search-icon.png" alt="img" class="rightHead__img img-fluid">
+										</div>
+										<p class="rightHead__text">
+											Поиск
+										</p>
+									</a>
+									<a href="#" class="rightHead__comparisons">
+										<div class="rightHead__circle">
+											<img src="img/libra_icon.png" alt="img" class="rightHead__img img-fluid">
+										</div>
+										<p class="rightHead__text">
+											Сравнение
+										</p>
+									</a>
+									<a href="#" class="rightHead__basket">
+										<div class="rightHead__circle">
+											<img src="img/basket_icon.png" alt="img" class="rightHead__img img-fluid">
+										</div>
+										<p class="rightHead__text">
+											Корзина
+										</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menuBorder">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul class="menuHead">
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									Макияж
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									ногти
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									волосы
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									лицо
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									тело и ванна
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									мужчинам
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									аксессуары
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									health and care
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									подарки
+								</a>
+							</li>
+							<li class="menuHead__item">
+								<a href="#" class="menuHead__link">
+									бренды
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<section class="banner-section" id="banner-section">
+			<div class="container">
+				<div class="row">
+					<div class="col ">
+						<div class="wrap-slider">
+							<ul class="slider-banner">
+								<li class="slider-banner__item">
+									<div class="slider-banner__bg">
+										<img src="img/1.png" alt="" class="slider-banner__img slider-banner__img_df img-fluid">
+										<img src="img/2.png" alt="" class="slider-banner__img img-fluid">
+										<img src="img/3.png" alt="" class="slider-banner__img slider-banner__img_ds img-fluid">
+										<h1 class="slider-banner__text">
+											Позволь нам освежить и раскрасить твой образ!
+										</h1>
+									</div> 
+								</li>
+								<li class="slider-banner__item">
+									<div class="slider-banner__bg">
+										<img src="img/1.png" alt="" class="slider-banner__img
+										slider-banner__img_df img-fluid">
+										<img src="img/2.png" alt="" class="slider-banner__img
+										slider-banner__img_ds img-fluid">
+										<img src="img/3.png" alt="" class="slider-banner__img img-fluid">
+										<p class="slider-banner__text">
+											Позволь нам освежить и раскрасить твой образ!
+										</p>
+									</div> 
+								</li>
+								<li class="slider-banner__item">
+									<div class="slider-banner__bg">
+										<img src="img/1.png" alt="" class="slider-banner__img
+										slider-banner__img_df img-fluid">
+										<img src="img/2.png" alt="" class="slider-banner__img img-fluid">
+										<img src="img/3.png" alt="" class="slider-banner__img
+										slider-banner__img_ds img-fluid">
+										<p class="slider-banner__text">
+											Позволь нам освежить и раскрасить твой образ!
+										</p>
+									</div> 
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="product-section" id="product-section">
+			<div class="container">
+				<div class="row">
+					<div class="col ">
+						<div class="wrap-sliderProd">
+							<h2 class="title-section">
+								Cамое популярное
+							</h2>
+							<ul class="slider-product">
+								<li class="slider-product__item">
+									<a href="#" class="slider-product__card">
+										<span class="slider-product__view">
+											Макияж
+										</span>
+										<img src="img/prod-1.png" alt="img" class="img-fluid slider-product__img">
+										<p class="slider-product__name">
+											Givenchy Le Rouge* Помада для губ
+										</p>
+										<div class="slider-product__buy">
+											<div class="slider-product__prices">
+												<p class="slider-product__price slider-product__price_old">
+													1 100грн
+												</p>
+												<p class="slider-product__price slider-product__price_new">
+													900грн
+												</p>
+											</div>
+											<button class="slider-product__btn">
+												<img src="img/basket_icon-buy.png" alt="img" class="img-fluid slider-product__icon">
+												В КОРЗИНУ
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="slider-product__item">
+									<a href="#" class="slider-product__card">
+										<span class="slider-product__view">
+											Тело и ванна
+										</span>
+										<img src="img/prod-2.png" alt="img" class="img-fluid slider-product__img">
+										<p class="slider-product__name">
+											Натуральное масло "Манго"
+										</p>
+										<div class="slider-product__buy">
+											<div class="slider-product__prices">
+												<p class="slider-product__price">
+													900грн
+												</p>
+											</div>
+											<button class="slider-product__btn">
+												<img src="img/basket_icon-buy.png" alt="img" class="img-fluid slider-product__icon">
+												В КОРЗИНУ
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="slider-product__item">
+									<a href="#" class="slider-product__card">
+										<span class="slider-product__view">
+											Волосы
+										</span>
+										<img src="img/prod-3.png" alt="img" class="img-fluid slider-product__img">
+										<p class="slider-product__name">
+											Аюрведический шампунь из индийских трав «Comex»
+										</p>
+										<div class="slider-product__buy">
+											<div class="slider-product__prices">
+												<p class="slider-product__price">
+													900грн
+												</p>
+											</div>
+											<button class="slider-product__btn">
+												<img src="img/basket_icon-buy.png" alt="img" class="img-fluid slider-product__icon">
+												В КОРЗИНУ
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="slider-product__item">
+									<a href="#" class="slider-product__card">
+										<span class="slider-product__view">
+											Ногти
+										</span>
+										<img src="img/prod-4.png" alt="img" class="img-fluid slider-product__img">
+										<p class="slider-product__name">
+											Лак для ногтей
+										</p>
+										<div class="slider-product__buy">
+											<div class="slider-product__prices">
+												<p class="slider-product__price">
+													900грн
+												</p>
+											</div>
+											<button class="slider-product__btn">
+												<img src="img/basket_icon-buy.png" alt="img" class="img-fluid slider-product__icon">
+												В КОРЗИНУ
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="slider-product__item">
+									<a href="#" class="slider-product__card">
+										<span class="slider-product__view">
+											Лицо
+										</span>
+										<img src="img/prod-5.png" alt="img" class="img-fluid slider-product__img">
+										<p class="slider-product__name">
+											Geparlys Karen Low Pure Vibe
+										</p>
+										<div class="slider-product__buy">
+											<div class="slider-product__prices">
+												<p class="slider-product__price">
+													900грн
+												</p>
+											</div>
+											<button class="slider-product__btn">
+												<img src="img/basket_icon-buy.png" alt="img" class="img-fluid slider-product__icon">
+												В КОРЗИНУ
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="slider-product__item">
+									<a href="#" class="slider-product__card">
+										<span class="slider-product__view">
+											Мужчинам
+										</span>
+										<img src="img/prod-6.png" alt="img" class="img-fluid slider-product__img">
+										<p class="slider-product__name">
+											Лак для ногтей
+										</p>
+										<div class="slider-product__buy">
+											<div class="slider-product__prices">
+												<p class="slider-product__price">
+													900грн
+												</p>
+											</div>
+											<button class="slider-product__btn">
+												<img src="img/basket_icon-buy.png" alt="img" class="img-fluid slider-product__icon">
+												В КОРЗИНУ
+											</button>
+										</div>
+									</a>
+								</li>
+								<li class="slider-product__item">
+									<a href="#" class="slider-product__card">
+										<span class="slider-product__view">
+											Ногти
+										</span>
+										<img src="img/prod-4.png" alt="img" class="img-fluid slider-product__img">
+										<p class="slider-product__name">
+											Givenchy Le Rouge* Помада для губ
+										</p>
+										<div class="slider-product__buy">
+											<div class="slider-product__prices">
+												<p class="slider-product__price">
+													900грн
+												</p>
+											</div>
+											<button class="slider-product__btn">
+												<img src="img/basket_icon-buy.png" alt="img" class="img-fluid slider-product__icon">
+												В КОРЗИНУ
+											</button>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="brands-section" id="brands-section">
+			<div class="container">
+				<div class="row">
+					<div class="col ">
+						<div class="wrap-slideBrands">
+							<h2 class="title-section">
+								Бренды нашего магазина
+							</h2>
+							<ul class="list-brands">
+								<li class="list-brands__item">
+									<a href="#" class="list-brands__link">
+										<img src="img/brand1.png" alt="img" class="list-brands__img img-fluid">
+									</a>
+								</li>
+								<li class="list-brands__item">
+									<a href="#" class="list-brands__link">
+										<img src="img/brand2.png" alt="img" class="list-brands__img img-fluid">
+									</a>
+								</li>
+								<li class="list-brands__item">
+									<a href="#" class="list-brands__link">
+										<img src="img/brand3.png" alt="img" class="list-brands__img img-fluid">
+									</a>
+								</li>
+								<li class="list-brands__item">
+									<a href="#" class="list-brands__link">
+										<img src="img/brand4.png" alt="img" class="list-brands__img img-fluid">
+									</a>
+								</li>
+								<li class="list-brands__item">
+									<a href="#" class="list-brands__link">
+										<img src="img/brand5.png" alt="img" class="list-brands__img img-fluid">
+									</a>
+								</li>
+								<li class="list-brands__item">
+									<a href="#" class="list-brands__link">
+										<img src="img/brand6.png" alt="img" class="list-brands__img img-fluid">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col ">
+						<div class="wrap-footer">
+							<div class="flex-reverce">
+								<ul class="content-footer list sample">
+									<li class="content-item bottom-line">
+										<div class="footer-section">
+											<p class="footer-section__text">
+												разделы сайта 
+												<span>
+													>
+												</span>
+											</p>
+										</div>
+									</li>
+									<li class="content-item">
+										<ul class="menuF-first">
+											<li class="menuF-first__item">
+												<a href="#" class="menuF-first__link">
+													макияж 
+												</a>
+											</li>
+											<li class="menuF-first__item">
+												<a href="#" class="menuF-first__link">
+													ногти
+												</a>
+											</li>
+											<li class="menuF-first__item">
+												<a href="#" class="menuF-first__link">
+													волосы
+												</a>
+											</li>
+											<li class="menuF-first__item">
+												<a href="#" class="menuF-first__link">
+													парфюмерия
+												</a>
+											</li>
+											<li class="menuF-first__item">
+												<a href="#" class="menuF-first__link">
+													лицо
+												</a>
+											</li>
+											<li class="menuF-first__item">
+												<a href="#" class="menuF-first__link">
+													тело и ванна
+												</a>
+											</li>
+											<li class="menuF-first__item">
+												<a href="#" class="menuF-first__link">
+													мужчинам
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="content-item">
+										<ul class="menuF-second">
+											<li class="menuF-second__item">
+												<a href="#" class="menuF-second__link">
+													аксессуары
+												</a>
+											</li>
+											<li class="menuF-second__item">
+												<a href="#" class="menuF-second__link">
+													healht and care
+												</a>
+											</li>
+											<li class="menuF-second__item">
+												<a href="#" class="menuF-second__link">
+													подарки
+												</a>
+											</li>
+											<li class="menuF-second__item">
+												<a href="#" class="menuF-second__link">
+													бренды
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="content-item bottom-line">
+										<ul class="menuF-third">
+											<li class="menuF-third__item">
+												<a href="#" class="menuF-third__link">
+													О компании
+												</a>
+											</li>
+											<li class="menuF-third__item">
+												<a href="#" class="menuF-third__link">
+													Бренды
+												</a>
+											</li>
+											<li class="menuF-third__item">
+												<a href="#" class="menuF-third__link">
+													Оплата и доставка
+												</a>
+											</li>
+											<li class="menuF-third__item">
+												<a href="#" class="menuF-third__link">
+													Возврат и обмен
+												</a>
+											</li>
+											<li class="menuF-third__item">
+												<a href="#" class="menuF-third__link">
+													Шоурум 
+												</a>
+											</li>
+											<li class="menuF-third__item">
+												<a href="#" class="menuF-third__link">
+													Контакты 
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="content-item bottom-line">
+										<div class="connection">
+											<div class="connection__contact">
+												<a href="#" class="connection__tel">
+													+3 (095) 721-64-63 
+												</a>
+												<p class="connection__time">
+													(пн-пт - 10:00-19:00 сб-вс - 11:00 - 17:00)
+												</p>
+											</div>
+											<buttom class="connection__btn">
+												Заказать звонок
+											</buttom>
+										</div>
+									</li>
+									<li class="content-item bottom-line">
+										<div class="payment">
+											<p class="payment__text">
+												Мы принимаем <span>любой способ оплаты</span>
+											</p>
+											<div class="payment__icons">
+												<img src="img/payment1.png" alt="img" class="payment__icon img-fluid">
+												<img src="img/payment2.png" alt="img" class="payment__icon img-fluid">
+											</div>
+										</div>
+									</li>
+								</ul>
+								<a href="#" class="link-footer__logo bottom-line">
+									<img src="img/logo.png" alt="img" class="bottom-footer__logoImg img-fluid">
+								</a>
+								
+							</div>
+							
+							<p class="bottom-footer__text">
+								© 2013-2017 «Benefit» — интернет-магазин косметики email: 
+								<span>
+									zakaz@benefit.ru	
+								</span> 
+							</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="js/parallax-bg.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+</body>
