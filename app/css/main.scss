@@ -144,7 +144,7 @@ h6 {
 	font-size: 13px;
 }
 
-.my-btn:focus {
+button, button:focus, .my-btn:focus, select {
 	outline: 0;
 }
 
@@ -247,7 +247,7 @@ label.error {
 
 /*------ header -------*/
 
-header {
+
 	/*position: relative;*/
 	.stripHead {
 		background: #000;
@@ -325,7 +325,6 @@ header {
 	    background-position: 95% 50%;
 	    border: 0px;
 	    color: #fff;
-	    outline: none;
 	}
 
 	select > option {
@@ -465,7 +464,7 @@ header {
 		cursor: pointer;
 	}
 
-	.rightHead__inpSearch {
+	.rightHead__inpSearch input {
 		position: absolute;
 		padding: 10px;
 		left: -150px;
@@ -545,9 +544,7 @@ header {
 		color: #828282;
 	}
 
-}
 
-.banner-section {
 	.wrap-slider {
 		padding: $padding;
 		background: #fff;
@@ -620,16 +617,15 @@ header {
 	  margin: 0 5px;
 	  padding: 0;
 	  cursor: pointer;
-	  outline: none;
 	}
 	
 	.slick-dots li.slick-active button {
 		background: #F94877;
 	}
 	
-}
 
-.product-section {
+
+
 	.wrap-sliderProd {
 		padding: $padding;
 		background: #fff;
@@ -698,8 +694,9 @@ header {
 		-ms-align-items: center;
 		align-items: center;
 		margin: 15px 0 0;
-		outline: none;
 		background: #fff;
+		cursor: pointer;
+		transition: all 0.3s ease;
 	}
 
 	.slider-product__view {
@@ -824,7 +821,6 @@ header {
 		width: 130px;
 		background: #F94877;
 		border: 0;
-		outline: none; 
 		text-transform: uppercase;
 		font-size: 20px;
 		display: -webkit-flex;
@@ -847,9 +843,9 @@ header {
 	.slider-product__icon {
 		margin-right: 10px;
 	}
-}
 
-.brands-section {
+
+
 	.wrap-slideBrands {
 		padding: $padding;
 		background: #fff;
@@ -899,13 +895,14 @@ header {
 		background: #C4C4C4;
 		margin-bottom: 10px;
 	}
-}
+
 
 .footer {
 	position: relative;
 	margin-top: 40px;
 	background: #fff;
 	border-top: 1px solid #222222;
+}
 
 	.wrap-footer {
 		padding: 35px 30px 10px 30px;
@@ -1082,7 +1079,7 @@ header {
 		color: #828282;
 	}
 
-	.bottom-footer__text span {
+	.bottom-footer__text a {
 		color: #FC104F;
 	}
 
@@ -1091,7 +1088,7 @@ header {
 		font-size: 24px;
 		letter-spacing: 0.1em;
 	}
-}
+
 
 .footer:before {
 	content: "";
@@ -1163,18 +1160,18 @@ header {
 }
 
 @media screen and (max-width: 1500px) {
-	.slick-slide .slider-banner__img_df {
+	.slider-banner__img_df {
 		display: none;
 	}
 }
 
 @media screen and (max-width: 1370px) {
 
-	.sample .content-item:nth-child(5){
+	.content-item:nth-child(5){
 		counter-increment:list 1;
 		order:6;
 	}
-	.sample .content-item:nth-child(6){
+	.content-item:nth-child(6){
 		counter-increment:list -1;
 		order:5;
 	}
@@ -1182,7 +1179,7 @@ header {
 
 @media screen and (max-width: 1200px) {
 
-	.footer .content-footer{
+	.content-footer{
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -1190,28 +1187,28 @@ header {
 		flex-wrap: wrap;
 	}
 
-	.footer .content-item:nth-child(2){
+	.content-item:nth-child(2){
 		width: 16%;
 	}
 
-	.footer .content-item:nth-child(3),
-	.footer .content-item:nth-child(4) {
+	.content-item:nth-child(3),
+	.content-item:nth-child(4) {
 		width: 28%;
 	}
 
-	.footer .content-item:nth-child(5) {
+	.content-item:nth-child(5) {
 		width: 300px;
 		margin-top: 30px;
 	}
 
-	.footer .content-item:nth-child(6) {
+	.content-item:nth-child(6) {
 		width: 28%;
 	}
 }
 
 @media screen and (max-width: 1150px) {
 
-	header .leftHead {
+	.leftHead {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
 		-ms-flex-direction: column;
@@ -1219,26 +1216,26 @@ header {
 		flex-direction: column;
 	}
 
-	header .leftHead__time {
+	.leftHead__time {
 		display: none;
 	}
 
-	header .wrap-flexReverse {
+	.wrap-flexReverse {
 		flex-direction: row-reverse;
 	}
 
-	header .leftHead {
+	.leftHead {
 		justify-content: center;
 	}
 }
 
 @media screen and (max-width: 1100px) { 
 
-	.slick-slide .slider-banner__img_ds {
+	.slider-banner__img_ds {
 		display: none;
 	}
 
-	.brands-section .list-brands {
+	.list-brands {
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -1246,7 +1243,7 @@ header {
 		flex-wrap: wrap;
 	}
 
-	.brands-section .list-brands li {
+	.list-brands li {
 		width: 30%;
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -1257,7 +1254,7 @@ header {
 		margin-bottom: 20px;
 	}
 
-	header .leftHead__contact {
+	.leftHead__contact {
 		width: 100%;
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -1274,7 +1271,7 @@ header {
 		align-items: center;
 	}
 
-	header .leftHead, header .rightHead {
+	.leftHead, header .rightHead {
 		max-width: 250px; 
 	}
 }
@@ -1285,7 +1282,7 @@ header {
 		padding: 0;
 	}
 
-	header {
+	.header {
 		position: fixed;
 		width: 100%;
 		/*height: 10vh;*/
@@ -1293,7 +1290,7 @@ header {
 		z-index: 1000;
 	}
 
-	header .header-nav {
+	.header-nav {
 		height: 70px;
 	}
 
@@ -1301,7 +1298,7 @@ header {
 		margin-top: 70px;
 	}
 
-	header .menu-burger {
+	.menu-burger {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -1309,11 +1306,11 @@ header {
 		display: flex;
 	}
 
-	header .stripHead {
+	.stripHead {
 	    display: none;
 	}
 
-	header .menuBorder {
+	.menuBorder {
 		position: fixed;
 		  left: 0;top: 70px;
 		  z-index: 99;
@@ -1327,7 +1324,7 @@ header {
 		  transform: translateX(-100%);
 	}
 
-	header .menuHead {
+	.menuHead {
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
 		-ms-flex-direction: column;
@@ -1335,48 +1332,48 @@ header {
 		flex-direction: column;
 	}
 
-	header .menuHead li a {
+	.menuHead li a {
 		color: #fff;
 	}
 
-	header .rightHead__text {
+	.rightHead__text {
 		display: none;
 	}
 
-	header .leftHead, header .rightHead {
+	.leftHead, .rightHead {
 		width: 170px;
 	}
 
-	.header .wrap-flexReverse {
+	.wrap-flexReverse {
 		width: 75%;
 		justify-content: flex-end;
 		-ms-align-items: center;
 		align-items: center;
 	}
 	
-	.banner-section .wrap-slider {
+	.wrap-slider {
 		padding-left: 0;
 		padding-right: 0;
 		margin-top: 0;
 	}
 
-	header .contentHead {
+	.contentHead {
 	    padding: 9px 0;
 	}
 
-	header .header-nav {
+	.header-nav {
 		background: #fff;
 	}
 	
-	header .header-nav,
-	.product-section .wrap-sliderProd,
-	.brands-section .wrap-slideBrands,
-	.footer .wrap-footer {
+	.header-nav,
+	.wrap-sliderProd,
+	.wrap-slideBrands,
+	.wrap-footer {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
 
-	header .leftHead {
+	.leftHead {
 		margin-left: 40px;
 	}
 
@@ -1387,103 +1384,103 @@ header {
 }
 
 @media screen and (max-width: 768px) { 
-	.brands-section .list-brands {
+	.list-brands {
 		justify-content: space-between;
 	}
 }
 
 @media screen and (max-width: 700px) { 
-	.footer .content-item:nth-child(2){
+	.content-item:nth-child(2){
 		width: 20%;
 	}
 
-	.footer .content-item:nth-child(3),
-	.footer .content-item:nth-child(4) {
+	.content-item:nth-child(3),
+	.content-item:nth-child(4) {
 		width: 40%;
 	}
 
-	.footer .content-item:nth-child(5) {
+	.content-item:nth-child(5) {
 		width: 300px;
 		margin-top: 30px;
 	}
 
-	.footer .content-item:nth-child(6) {
+	.content-item:nth-child(6) {
 		width: 300px;
 		margin-top: 30px;
 	}
 
-	header .rightHead__comparisons {
+	.rightHead__comparisons {
 		display: none;
 	}
 
-	header .rightHead {
+	.rightHead {
 	    width: 100px;
 	}
 }
 
 @media screen and (max-width: 600px) { 
-	.brands-section .list-brands li {
+	.list-brands li {
 	    width: 50%;
 	}
 
-	.banner-section .slider-banner__text {
+	.slider-banner__text {
 		font-size: 24px;
 		line-height: 27px
 	}
 
-	.banner-section .slider-banner__bg {
+	.slider-banner__bg {
 		height: 218px;
 		padding: 0 45px;
 	}
 
-	header .leftHead {
+	.leftHead {
 		display: none;
 	}
 
-	.banner-section .slider-banner__img {
+	.slider-banner__img {
 		height: 70%;
 	}
 }
 
 @media screen and (max-width: 450px) { 
 
-	.footer .content-item:nth-child(1),
-	.footer .content-item:nth-child(5),
-	.footer .content-item:nth-child(6) {
+	.content-item:nth-child(1),
+	.content-item:nth-child(5),
+	.content-item:nth-child(6) {
 		display: block;
 		width: 100%;
 	}
 
-	.footer  .footer-section {
+	.footer-section {
 		width: 100%;
 		padding-top: 30px;
 	}
 
-	.footer  .footer-section .footer-section__text {
+	.footer-section .footer-section__text {
 		text-align: center;
 	}
 
-	.footer .content-item:nth-child(2){
+	.content-item:nth-child(2){
 		display: none;
 	}
 
-	.footer .content-item:nth-child(3),
-	.footer .content-item:nth-child(4) {
+	.content-item:nth-child(3),
+	.content-item:nth-child(4) {
 		display: none;
 	}
 
-	.footer .content-item:nth-child(4) {
+	.content-item:nth-child(4) {
 		display: none;
 		width: 100%;
 		justify-content: center;
 		padding-top: 30px;
 	}
 
-	footer .menuF-third  li {
+	.menuF-third  li {
 		padding: 10px 0;
 	}
 
-	footer .connection__contact {
+	.connection__contact {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -1498,7 +1495,7 @@ header {
 		align-items: center;
 	}
 
-	footer .link-footer__logo {
+	.link-footer__logo {
 		width: 100%;
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -1508,12 +1505,12 @@ header {
 		justify-content: center;
 	}
 
-	footer .bottom-line {
+	.bottom-line {
 		position: relative;
 		padding-bottom: 30px;
 	}
 
-	footer .bottom-line:after {
+	.bottom-line:after {
 		content: "";
 		position: absolute;
 		bottom: 0;
@@ -1522,24 +1519,24 @@ header {
 		background: #C4C4C4;
 	}
 
-	.brands-section .list-brands li {
+	.list-brands li {
 	    width: 100%;
 	}
 
-	header .menu-burger {
+	.menu-burger {
 	    margin-right: 15px;
 	}
 
-	.header .wrap-flexReverse {
+	.wrap-flexReverse {
 		width: 50%;
 		margin-right: 10px;
 	}
 
-	.banner-section .slider-banner__img {
+	.slider-banner__img {
 		height: 50%!important;
 	}
 
-	.footer .flex-reverce {
+	.flex-reverce {
 	   flex-direction: column-reverse;
 	   -ms-align-items: center;
 	   align-items: center;
@@ -1549,7 +1546,7 @@ header {
 		display: none;
 	}
 
-	.footer .payment {
+	.payment {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -1564,7 +1561,7 @@ header {
 		align-items: center;
 	}
 
-	.footer .connection {
+	.connection {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -1579,7 +1576,7 @@ header {
 		align-items: center;
 	}
 
-	.footer .bottom-footer__text {
+	.bottom-footer__text {
 		text-align: center;
 	}
 }
